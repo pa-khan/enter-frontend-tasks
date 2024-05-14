@@ -34,7 +34,7 @@ class User implements User {
   name: string;
   age: number;
   location = {};
-  skills: UserSkillInterface[] = [];
+  public skills: UserSkillInterface[] = [];
 
   constructor() { }
 
@@ -46,7 +46,7 @@ class User implements User {
     return this.location;
   }
 
-  setAge(age: number) {
+  public setAge(age: number) {
     this.age = age;
   }
 }
