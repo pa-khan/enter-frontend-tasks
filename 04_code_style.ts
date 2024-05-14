@@ -27,6 +27,7 @@ interface IUserLocation {
 
 interface UserSkillInterface {
   id: number;
+  title: string;
 }
 
 class User implements User {
@@ -35,7 +36,7 @@ class User implements User {
   location = {};
   skills: UserSkillInterface[] = [];
 
-  constructor() {}
+  constructor() { }
 
   public sayName(): void {
     console.log(this.name);
